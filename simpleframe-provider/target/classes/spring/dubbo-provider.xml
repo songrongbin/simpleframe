@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+        <dubbo:application name="simpleframe-app" />
+        <!--zookeeper注册中心 -->
+        <dubbo:registry id="central" address="192.168.17.129:2181" protocol="zookeeper"/>
+
+        <dubbo:protocol name="dubbo" port="20880" />
+
+        <bean id="simpleFrameAPI" class="com.bins.simpleframe.provider.SimpleFrameProvider" />
+        <dubbo:service registry="central" interface="com.bins.simpleframe.api.SimpleFrameAPI" ref="simpleFrameAPI"/>
+</beans>

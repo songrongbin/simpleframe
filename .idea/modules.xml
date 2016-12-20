@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/simpleframe.iml" filepath="$PROJECT_DIR$/simpleframe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simpleframe-api/simpleframe-api.iml" filepath="$PROJECT_DIR$/simpleframe-api/simpleframe-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simpleframe-consumer/simpleframe-consumer.iml" filepath="$PROJECT_DIR$/simpleframe-consumer/simpleframe-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simpleframe-provider/simpleframe-provider.iml" filepath="$PROJECT_DIR$/simpleframe-provider/simpleframe-provider.iml" />
+    </modules>
+  </component>
+</project>
