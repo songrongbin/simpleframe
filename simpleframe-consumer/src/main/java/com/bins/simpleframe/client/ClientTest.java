@@ -13,6 +13,7 @@ public class ClientTest {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[]{"spring/dubbo-consumer.xml"});
         context.start();
+        // git testß
         SimpleFrameAPI simpleFrameAPI = (SimpleFrameAPI) context.getBean("simpleFrameAPI");
         System.out.println(simpleFrameAPI.getOrderCount(1l));
     }
